@@ -20,7 +20,6 @@ nav{
     justify-content: space-between;
     padding-left: 210px;
     padding-right: 210px;
-    position: absolute;
     width: 100%;
     height: 94px;
     background: #562EFF;
@@ -46,8 +45,6 @@ nav{
     
 }
 
-
-
 nav a{
     
     margin-left: 35px;
@@ -63,7 +60,7 @@ nav a{
 }
 
 #main{
-    padding-top:130px;
+    margin-top: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,3 +210,58 @@ hr{
     font-size: 14.69px;
 }
 
+@media only screen and (max-width:688px){
+   
+   nav{
+       padding: 0px;
+       justify-content:center;
+       width: 100%;
+   }
+       
+   .container, #courses-section{
+        width: 100%;
+        height: 100%;
+   }
+
+   .players, .blogs{
+       grid-template-columns: repeat(1, 1fr);
+       
+   }
+   .player{
+       justify-content: center;
+   }
+   hr{
+       width: 85%;
+   }
+   .courses{
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    nav{
+        padding: 0px;
+        justify-content:center;
+        max-width: 100%;
+    }
+
+    .container, #courses-section{
+        width: 100%;
+        height: 100%;
+   }
+
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 25%;
+        grid-row-gap: 25px;
+    }
+
+   
+
+    
+   
+}
